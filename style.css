@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  #taskInput {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  #addTask {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  li {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-word;
+  }
+  
+  .btn {
+    margin-left: 5px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+  
+    .input-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    #addTask {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
